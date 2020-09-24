@@ -21,6 +21,15 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+        applicationVariants.all{
+            variant ->
+                variant.outputs.each{
+                    output->
+                        def  name = "Flags_and_Capitals.apk"
+                        output.outputFileName=name
+                }
+        }
     }
 
 }
