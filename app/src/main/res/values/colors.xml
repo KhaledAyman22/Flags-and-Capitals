@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFBA08</color>
+    <color name="colorPrimaryDark">#FFBA08</color>
+    <color name="colorAccent">#FF951F</color>
+
+    <color name="fontColor">#AE0032</color>
+
+    <color name="menuButton">#faa307</color>
+
+    <color name="choiceButton">#E9E9E9</color>
+    <color name="strokeRightColor">#6AAB33</color>
+    <color name="strokeWrongColor">#D02C2D</color>
+
+</resources>

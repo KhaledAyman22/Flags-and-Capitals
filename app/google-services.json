@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1029413452962",
+    "firebase_url": "https://flags-and-capitals-2.firebaseio.com",
+    "project_id": "flags-and-capitals-2",
+    "storage_bucket": "flags-and-capitals-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029413452962:android:1a46e6864f2327fba2ebfb",
+        "android_client_info": {
+          "package_name": "com.example.flagsandcapitals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029413452962-fbdi1u86utfce6ipn83a5o8n197uv7t4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flagsandcapitals",
+            "certificate_hash": "eaac341d3d03240c50ea4f04d029ac1e7c23fbc2"
+          }
+        },
+        {
+          "client_id": "1029413452962-8pvo32ol5kn4td0fpq6lvsegeeip701c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIWWtgyP7WVdvCSCo9h7pfLJ2WQuNFtYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029413452962-iu8ottem48sb4go7800pg97u2dm9ketp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

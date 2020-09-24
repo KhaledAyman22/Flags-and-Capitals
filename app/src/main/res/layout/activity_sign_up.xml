@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fadeScrollbars="true"
+    android:theme="@style/Theme.MaterialComponents.NoActionBar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        tools:context=".SignUp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/name_font"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/flags_and_capitals"
+            android:textColor="@color/fontColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="5dp"
+            android:onClick="UploadProfile"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeMaxTextSize="35sp"
+            android:autoSizeMinTextSize="15sp"
+            android:autoSizeTextType="uniform"
+            android:clickable="true"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:onClick="UploadProfile"
+            android:padding="5dp"
+            android:text="@string/click_to_add_a_profile_picture"
+            android:textColor="@android:color/secondary_text_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstnameLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="330dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:pointerIcon="text"
+            android:textColorHint="#370617"
+            app:boxStrokeColor="@color/fontColor"
+            app:boxStrokeErrorColor="@color/strokeWrongColor"
+            app:errorEnabled="true"
+            app:hintTextColor="#370617"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeTextType="uniform"
+                android:hint="@string/fname"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#370617"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lastnameLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="330dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:pointerIcon="text"
+            android:textColorHint="#370617"
+            app:boxStrokeColor="@color/fontColor"
+            app:boxStrokeErrorColor="@color/strokeWrongColor"
+            app:errorEnabled="true"
+            app:hintTextColor="#370617"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstnameLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeTextType="uniform"
+                android:hint="@string/lname"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#370617"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="330dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:pointerIcon="text"
+            android:textColorHint="#370617"
+            app:boxStrokeColor="@color/fontColor"
+            app:boxStrokeErrorColor="@color/strokeWrongColor"
+            app:errorEnabled="true"
+            app:hintTextColor="#370617"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastnameLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeTextType="uniform"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#370617"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="330dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:pointerIcon="text"
+            android:textColorHint="#370617"
+            app:boxStrokeColor="@color/fontColor"
+            app:boxStrokeErrorColor="@color/strokeWrongColor"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:hintTextColor="#370617"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeTextType="uniform"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#370617"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/repassLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="330dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:pointerIcon="text"
+            android:textColorHint="#370617"
+            app:boxStrokeColor="@color/fontColor"
+            app:boxStrokeErrorColor="@color/strokeWrongColor"
+            app:errorEnabled="true"
+            app:hintTextColor="#370617"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/repass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeTextType="uniform"
+                android:hint="@string/confirm"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#370617"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/email_login"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/login"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="sign"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:visibility="visible"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repassLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

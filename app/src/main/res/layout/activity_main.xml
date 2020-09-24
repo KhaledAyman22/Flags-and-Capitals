@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/flags"
+        style="@style/shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="80dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/name_font"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/flags"
+        android:textAlignment="center"
+        android:textColor="@color/fontColor"
+        app:layout_constraintBottom_toBottomOf="@+id/and"
+        app:layout_constraintEnd_toEndOf="@+id/and" />
+
+    <TextView
+        android:id="@+id/capitals"
+        style="@style/shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/name_font"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/capitals"
+        android:textAlignment="center"
+        android:textColor="@color/fontColor"
+        app:layout_constraintStart_toStartOf="@+id/and"
+        app:layout_constraintTop_toTopOf="@+id/and" />
+
+    <TextView
+        android:id="@+id/and"
+        style="@style/shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/name_font"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/and"
+        android:textAlignment="center"
+        android:textColor="@color/fontColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            style="@style/shadow"
+            android:fontFamily="@font/name_font"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/flags_and_capitals"
+            android:textColor="@color/fontColor"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/profile"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/username"
+            style="@style/shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="@string/guest"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <Button
+            android:id="@+id/google_logout_custom"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="72dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/google_login_button"
+            android:drawableStart="@drawable/g_logo"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:onClick="Logout"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="5dp"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textColor="#818A97"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+        <Button
+            android:id="@+id/email_logout_custom"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="72dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/email_login_button"
+            android:drawableStart="@drawable/email_logo"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:onClick="Logout"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="5dp"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/play"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:onClick="Continue"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="5dp"
+            android:text="@string/back_to_menu"
+            android:textAllCaps="false"
+            android:textColor="@color/fontColor"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_logout_custom" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google_sign_in_button"
+            android:layout_width="249dp"
+            android:layout_height="46dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/google_login_button_custom"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/google_login_button"
+                android:drawableStart="@drawable/g_logo"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:onClick="g_custom_click"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="5dp"
+                android:text="@string/login_with_google"
+                android:textAllCaps="false"
+                android:textColor="#818A97"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/email_login"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/email_login_button"
+                android:drawableStart="@drawable/email_logo"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:onClick="e_custom_click"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="5dp"
+                android:text="@string/login_with_email"
+                android:textAllCaps="false"
+                android:textColor="#818A97"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

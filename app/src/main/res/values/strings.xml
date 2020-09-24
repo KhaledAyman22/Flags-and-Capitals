@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Flags &amp; Capitals</string>
+    <string name="flags">Flags</string>
+    <string name="capitals">Capitals</string>
+    <string name="and">&#160;and&#160;</string>
+    <string name="guess_the">Guess The&#160;</string>
+    <string name="country">Country</string>
+    <string name="capital">Capital</string>
+    <string name="flag_a">Flag a</string>
+    <string name="flag_b">Flag b</string>
+    <string name="_0">0</string>
+    <string name="to">:</string>
+    <string name="number_of_wrong_answers">Number of wrong answers</string>
+    <string name="number_of_right_answers">Number of right answers</string>
+    <string name="the_flag">The flag</string>
+    <string name="first_choice">First choice</string>
+    <string name="second_choice">Second choice</string>
+    <string name="third_choice">Third choice</string>
+    <string name="fourth_choice">Fourth choice</string>
+    <string name="guest">Guest</string>
+    <string name="flags_and_capitals">Flags and Capitals</string>
+    <string name="login_with_email">&#160;&#160;&#160;&#160;&#160;&#160;&#160;Login with Email</string>
+    <string name="login_with_google">&#160;&#160;&#160;&#160;&#160;&#160;&#160;Login with Google</string>
+    <string name="login_with_facebook">&#160;&#160;&#160;&#160;&#160;&#160;&#160;Login with Facebook</string>
+    <string name="logout">Logout</string>
+    <string name="no_account_create_new">&#160;No&#160;account?&#160;Create&#160;one&#160;</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="click_to_add_a_profile_picture">Click to add a profile picture</string>
+    <string name="back_to_menu">Back to game</string>
+    <string name="you_did_it">You did it</string>
+</resources>
